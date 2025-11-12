@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: cloudStorageProject
+  cloud:
+    gcp:
+      storage:
+        enabled: false
+
+# Custom GCP storage configuration used by StorageService
+gcp:
+  storage:
+    bucket: my-file-storage-123
+    credentials: classpath:file-storage-project-56068-f0df4e831334.json
+
+# Optional: set explicit server port (defaults to 8080)
+# server:
+#   port: 8080
+
+
